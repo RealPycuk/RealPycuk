@@ -42,4 +42,5 @@
 
 | Проект | Что сделано |
 |---|---|
+| [subscription-bot](https://github.com/RealPycuk/subscription-bot) | Telegram-бот подписок в продакшене и инфраструктура двух Linux-серверов: Docker с hardening контейнера, мониторинг нод и портов с алертами, ежедневные бэкапы PostgreSQL, cron-автоматизация с проверкой и откатом, SSH/fail2ban/ufw, CI (flake8, shellcheck, hadolint) |
 | [hello-world-minikube](https://github.com/RealPycuk/hello-world-minikube) | FastAPI в Kubernetes: Deployment на 2 реплики, Service, пробы, лимиты ресурсов, hardening контейнера. CI собирает образ и деплоит его в тестовый кластер kind |

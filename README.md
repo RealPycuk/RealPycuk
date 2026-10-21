@@ -11,7 +11,7 @@
 ### Обо мне
 
 - 🎓 Студент 4 курса СПбГЭТУ «ЛЭТИ», ФКТИ, направление «Информационные системы и технологии»
-- 🛠 Поддерживаю собственную инфраструктуру из двух Linux-серверов в разных странах: сервисы в Docker, Telegram-бот на Python, мониторинг на Prometheus и Grafana, ежедневные бэкапы PostgreSQL, автоматические обновления по cron, защита SSH, fail2ban, firewall
+- 🛠 С октября 2025 года поддерживаю собственную инфраструктуру из двух Linux-серверов: сервисы в Docker, Telegram-бот на Python, мониторинг на Prometheus и Grafana, ежедневные бэкапы PostgreSQL, автоматические обновления по cron, защита SSH, fail2ban, firewall
 - 🎯 Ищу позицию Junior DevOps / Infrastructure Engineer
 - 🌍 Английский B2
 
@@ -42,5 +42,7 @@
 
 | Проект | Что сделано |
 |---|---|
-| [subscription-bot](https://github.com/RealPycuk/subscription-bot) | Telegram-бот подписок в продакшене и инфраструктура двух Linux-серверов: Docker с hardening контейнера, Prometheus + Grafana + Alertmanager с алертами в Telegram и юнит-тестами алертов, Ansible-плейбук настройки сервера с нуля (CI прогоняет его дважды на чистой VM и проверяет идемпотентность), ежедневные бэкапы PostgreSQL, cron-автоматизация с проверкой и откатом, SSH/fail2ban/ufw, CI (flake8, shellcheck, hadolint) |
+| [docker-deploy-rollback](https://github.com/RealPycuk/docker-deploy-rollback) | Деплой по git-тегу для Docker Compose: сборка образа на сервере, health check и автоматический откат, SSH-ключ с forced command. CI гоняет сквозной тест: рабочая, сломанная и снова рабочая версия. Разбор реального инцидента с проверкой здоровья |
+| [monitoring-stack](https://github.com/RealPycuk/monitoring-stack) | Prometheus, Alertmanager, Grafana, node и blackbox exporter в Docker Compose: 10 алертов в Telegram с юнит-тестами promtool, дашборд из provisioning. CI поднимает весь стек и проверяет, что цели опрашиваются и правила загружены |
+| [ansible-server-setup](https://github.com/RealPycuk/ansible-server-setup) | Плейбук из 6 ролей настраивает Ubuntu-сервер с нуля: SSH hardening, fail2ban, ufw, Docker, мониторинг по тегу. CI применяет его к чистой VM дважды и проверяет идемпотентность |
 | [hello-world-minikube](https://github.com/RealPycuk/hello-world-minikube) | FastAPI в Kubernetes: Deployment на 2 реплики, Service, пробы, лимиты ресурсов, hardening контейнера. CI собирает образ и деплоит его в тестовый кластер kind |
